@@ -186,12 +186,6 @@ ul.row {
     list-style: none;
 }
 
-[data-section-theme="dark"] {
-    --text-color: var(--color-white);
-    --section-title-color: var(--color-white);
-    background-color: var(--color-black);
-}
-
 [class^="col-"] {
     float: left;
     padding: 0.5rem;
@@ -236,5 +230,19 @@ ul.row {
 }
 
 .social-link svg {
+    fill: var(--text-color);
+}
+
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+[data-section-theme="dark"] .footer-address {
+    color: var(--text-color);
+}
+
+[data-section-theme="dark"] .social-link svg {
     fill: var(--text-color);
 }
